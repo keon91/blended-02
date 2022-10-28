@@ -75,15 +75,25 @@ button {
 }
 
 .header-nav {
+  margin-left: auto;
 }
 
 .header-list {
   display: flex;
+  /* gap: 30px; */
   align-items: center;
 }
 
-.header-item {
+.header-item:not(:last-child) {
+   margin-right: 30px; 
+
+
+}
+.header-link {
+  display: block;
+  padding: 30px;
 }
 
-.header-link {
+.header-link:not(:last-child) {
+  padding-right: 30px;
 }
